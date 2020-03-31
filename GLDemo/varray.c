@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <OpenGL/OpenGL.h>
-#include <GLUT/GLUT.h>
+#include "gl_headers.h"
 
 #define INIT_MODE_POINTER 1
 #define INIT_MODE_INTERLEAVED 2
@@ -11,7 +8,6 @@
 #define DEREF_MODE_ELEMENTS 3
 
 int initMode = INIT_MODE_POINTER;
-int glutDisplayMode = GLUT_DOUBLE;
 int derefMode = DEREF_MODE_ARRAY_ELEMENT;
 
 static GLint vertices[] = {25, 25,
@@ -21,19 +17,6 @@ static GLint vertices[] = {25, 25,
     250, 25,
     325, 325};
 
-static GLfloat colors[] = { 1.0, 0.2, 0.2,
-    0.2, 0.2, 1.0,
-    0.8, 1.0, 0.2,
-    0.75, 0.75, 0.75,
-    0.35, 0.35, 0.35,
-    0.5, 0.5, 0.5};
-
-static GLfloat interwined[] ={1.0, 0.2, 1.0, 100.0, 100.0, 0.0,
-    1.0, 0.2, 0.2, 0.0, 200.0, 0.0,
-    1.0, 1.0, 0.2, 100.0, 300.0, 0.0,
-    0.2, 1.0, 0.2, 200.0, 300.0, 0.0,
-    0.2, 1.0, 1.0, 300.0, 200.0, 0.0,
-    0.2, 0.2, 1.0, 200.0, 100.0, 0.0};
 
 void display(void)
 {

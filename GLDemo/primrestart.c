@@ -1,8 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <OpenGL/OpenGL.h>
-#include <GLUT/GLUT.h>
-#include <OpenGL/gl3.h>
+#include "gl_headers.h"
 
 #define BUFFER_OFFSET(offset) ((GLvoid *)NULL + offset)
 

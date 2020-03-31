@@ -1,7 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <OpenGL/OpenGL.h>
-#include <GLUT/GLUT.h>
+#include "gl_headers.h"
 
 void display(void)
 {
